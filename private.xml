@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!-- Use with KeyRemap4MacBook:
+     http://pqrs.org/macosx/keyremap4macbook/ -->
+<root>
+    <devicevendordef>
+        <vendorname>LOGITECH</vendorname>
+        <vendorid>0x046d</vendorid>
+    </devicevendordef>
+
+    <deviceproductdef>
+        <productname>LOGITECH_R700</productname>
+        <productid>0xc538</productid>
+    </deviceproductdef>
+
+    <appdef>
+        <appname>KEYNOTE</appname>
+        <equal>com.apple.iWork.Keynote</equal>
+    </appdef>
+    <appdef>
+        <appname>VLC</appname>
+        <equal>org.videolan.vlc</equal>
+    </appdef>
+    <appdef>
+        <appname>DVD_PLAYER</appname>
+        <equal>com.apple.DVDPlayer</equal>
+    </appdef>
+
+    <item>
+        <name>R700 for Keynote</name>
+        <identifier>private.R700_for_keynote</identifier>
+        <only>KEYNOTE</only>
+        <device_only>DeviceVendor::LOGITECH, DeviceProduct::LOGITECH_R700</device_only>
+        <autogen><!-- blank screen -->
+            __KeyToKey__
+            KeyCode::DOT,
+            KeyCode::B
+        </autogen>
+        <autogen><!-- play 1/2 -->
+            __KeyToKey__
+            KeyCode::F5,
+            KeyCode::P, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- play 2/2 -->
+            __KeyToKey__
+            KeyCode::ESCAPE,
+            KeyCode::P, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>R700 for VLC</name>
+        <identifier>private.R700_for_vlc</identifier>
+        <only>VLC</only>
+        <device_only>DeviceVendor::LOGITECH, DeviceProduct::LOGITECH_R700</device_only>
+        <autogen><!-- left = turn volume *down* -->
+            __KeyToKey__
+            KeyCode::PAGEUP,
+            KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- right = turn volume *up* -->
+            __KeyToKey__
+            KeyCode::PAGEDOWN,
+            KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- blank screen = full screen -->
+            __KeyToKey__
+            KeyCode::DOT,
+            KeyCode::F, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- play 1/2 -->
+            __KeyToKey__
+            KeyCode::F5,
+            KeyCode::SPACE
+        </autogen>
+        <autogen><!-- play 2/2 -->
+            __KeyToKey__
+            KeyCode::ESCAPE,
+            KeyCode::SPACE
+        </autogen>
+    </item>
+    <item>
+        <name>R700 for DVD Player</name>
+        <identifier>private.R700_for_dvd_player</identifier>
+        <only>DVD_PLAYER</only>
+        <device_only>DeviceVendor::LOGITECH, DeviceProduct::LOGITECH_R700</device_only>
+        <autogen><!-- left = turn volume *down* -->
+            __KeyToKey__
+            KeyCode::PAGEUP,
+            KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- right = turn volume *up* -->
+            __KeyToKey__
+            KeyCode::PAGEDOWN,
+            KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- blank screen = full screen -->
+            __KeyToKey__
+            KeyCode::DOT,
+            KeyCode::F, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen><!-- play 1/2 -->
+            __KeyToKey__
+            KeyCode::F5,
+            KeyCode::SPACE
+        </autogen>
+        <autogen><!-- play 2/2 -->
+            __KeyToKey__
+            KeyCode::ESCAPE,
+            KeyCode::SPACE
+        </autogen>
+    </item>
+</root>
